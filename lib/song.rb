@@ -51,7 +51,7 @@ end
 def self.new_from_filename(info)
   art = (info.split.first)
   song = self.new(art)
-  song.name
+  song
 end
 
 end

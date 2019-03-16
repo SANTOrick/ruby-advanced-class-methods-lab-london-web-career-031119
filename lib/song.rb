@@ -33,7 +33,7 @@ def self.create_by_name(name)
 end
 
 def find_by_name(tip)
-  @@all.each { |song| tip == song.name return self }
+  @@all.each { |song| tip == song.name }
 end
 
 end

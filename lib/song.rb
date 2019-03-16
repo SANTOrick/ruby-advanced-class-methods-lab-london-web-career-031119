@@ -40,7 +40,7 @@ end
 
 def self.find_or_create_by_name(tip)
   if (self.find_by_name(tip) == self)
-    return  self
+    return  true
   else
     self.create_by_name(tip)
   end

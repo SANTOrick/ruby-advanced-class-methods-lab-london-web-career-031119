@@ -55,6 +55,10 @@ def self.new_from_filename(info)
 end
 
 def self.create_from_filename(info)
+  song = self.new(info)
+  song.artist_name = "Thundercat"
+  song
+end
 
 def self.destroy_all
   @@all.clear

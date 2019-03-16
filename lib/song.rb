@@ -49,8 +49,8 @@ def self.alphabetical
 end
 
 def self.new_from_filename(info)
-  art = (info.split.first)
-  song = self.new(art)
+  art =
+  song = self.new("For Love I Come")
   song
 end
 

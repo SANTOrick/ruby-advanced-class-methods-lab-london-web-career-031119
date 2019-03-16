@@ -38,14 +38,14 @@ class Song
   end
 
   def self.find_or_create_by_name(finder)
-    Song.all.find{ |i|  i.name == finder  } ? self.create_by_name(finder) : false
+    Song.all.find{ |i|  i.name == finder  } ? finder.create_by_name(finder) : false
     self.find_by_name(name)
   end
 
 def self.alphabetical
   @@all
-  binding.pry
-  puts "VJNNF"
+  # binding.pry
+  # puts "VJNNF"
 end
 
 end

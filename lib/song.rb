@@ -54,6 +54,9 @@ def self.new_from_filename(info)
   song
 end
 
+def self.destroy_all
+  @@all.clear
+
 end
 
 

@@ -43,7 +43,7 @@ def self.find_or_create_by_name(tip)
 
 end
 
-# 
+#
 # binding.pry
 # puts "SKSK"
 end

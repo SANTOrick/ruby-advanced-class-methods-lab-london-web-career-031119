@@ -48,8 +48,8 @@ def self.alphabetical
   @@all.sort! { |a,b| a.name.downcase <=> b.name.downcase }.uniq!
 end
 
-def self.new_from_filename(name, artist_name)
-  song = self.new(name, artist_name)
+def self.new_from_filename(artist_name)
+  song = self.new(artist_name)
 end
 
 end

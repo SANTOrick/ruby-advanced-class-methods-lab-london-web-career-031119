@@ -110,7 +110,7 @@ class Song
   end
 
   def self.find_or_create_by_name(finder)
-    Song.all.find{ |i|  i.name == finder  } ? self.create_by_name(finder) : false
+    self.find_by_name(name) == finder ? self.create_by_name(finder) : false
     self.find_by_name(name)
   end
 

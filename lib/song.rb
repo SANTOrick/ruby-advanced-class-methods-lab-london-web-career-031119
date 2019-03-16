@@ -8,8 +8,8 @@ def initialize
 end
 
 def self.create
-  song = Song.new
-song
+  song = self.new
+  song
 end
 
 

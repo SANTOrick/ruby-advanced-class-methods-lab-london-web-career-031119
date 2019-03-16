@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
 
     attr_accessor :name, :artist_name
@@ -40,6 +42,8 @@ def self.find_or_create_by_name(tip)
   self.find_by_name(tip) ? false : self.create_by_name(tip)
 end
 
+binding.pry
+puts "SKSK"
 end
 
 

@@ -4,17 +4,26 @@ class Song
 
     @@all = []
 
+    def initialize(name)
+      @name = name
+      @@all << self
+    end
+
+
     def self.all
       @@all
     end
 
 
-  def self.create
+def self.create
     song = self.new
     @@all << song
     song
 end
 
+def self.new_by_name(name)
+  
+end
 
 end
 

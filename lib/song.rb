@@ -49,10 +49,12 @@ def self.alphabetical
 end
 
 def self.new_from_filename(info)
-  song = self.new("For Love I Come")
+  song = self.new(info)
   song.artist_name = "Thundercat"
   song
 end
+
+def self.create_from_filename(info)
 
 def self.destroy_all
   @@all.clear

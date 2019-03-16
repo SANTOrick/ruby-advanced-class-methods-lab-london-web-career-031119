@@ -44,7 +44,7 @@ def self.find_or_create_by_name(tip)
 end
 
 def self.alphabetical
-  @@all.map { |song| song.name.sort }
+  @@all.map { |song| self.name.sort }
 
 end
 

@@ -50,7 +50,7 @@ end
 
 def self.new_from_filename(name, artist_name)
   song = self.new(name, artist_name)
-
+end
 
 end
 

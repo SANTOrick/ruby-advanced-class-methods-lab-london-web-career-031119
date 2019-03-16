@@ -49,7 +49,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(info)
-  art = (info.split_first)
+  art = (info.split.first)
   song = self.new(art)
   song.name
 end

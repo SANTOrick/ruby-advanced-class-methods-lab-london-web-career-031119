@@ -40,15 +40,12 @@ end
 
 def self.find_or_create_by_name(tip)
   self.find_by_name(tip) ? self.class : true
-
   end
 end
 
 
 # binding.pry
 # puts "SKSK"
-end
-
 
 
 

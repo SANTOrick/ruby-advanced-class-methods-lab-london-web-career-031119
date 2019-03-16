@@ -49,8 +49,8 @@ def self.alphabetical
 end
 
 def self.new_from_filename(info)
-  splitter = (info.split_first)
-  song = self.new(artist_name)
+  art = (info.split_first)
+  song = self.new(art)
   song.name
 end
 

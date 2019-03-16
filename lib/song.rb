@@ -35,7 +35,7 @@ def self.create_by_name(name)
 end
 
 def self.find_by_name(tip)
-  @@all.select { |song| tip == song.name }
+  @@all.select { |song| tip == song.name }.pop
 end
 
 def self.find_or_create_by_name(tip)

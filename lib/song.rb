@@ -43,6 +43,10 @@ def self.find_or_create_by_name(tip)
 
 end
 
+def self.alphabetical
+  @@all.sort!
+
+end
 #
 # binding.pry
 # puts "SKSK"

@@ -1,7 +1,11 @@
-class Song
-  attr_accessor :name, :artist_name
-  @@all = []
+require 'pry'
 
+class Song
+
+  attr_accessor :name, :artist_name
+
+  @@all = []
+  @@i = 1
   def self.all
     @@all
   end
@@ -9,5 +13,40 @@ class Song
   def save
     self.class.all << self
   end
+
+  def self.create
+    song = self.new
+    @@all << song
+
+    song
+  end
+
+  def self.new_by_name(title)
+   song = self.create
+   song.name = title
+   song
+  end
+
+  def self.create_by_name(name)
+    song = self.create
+    song.name = name
+    song
+  end
+
+  def self.find_by_name(search)
+    Song.all.select{ |i|  i.name == search  }.pop
+  end
+
+  def self.find_or_create_by_name(finder)
+    Song.all.find{ |i|  i.name == finder  } ? self.create_by_name(finder) : false
+    # self.create_by_name(name)
+    self.find_by_name(name)
+  end
+
+def self.alphabetical
+  @@all
+  binding.pry
+  puts "VJNNF"
+end
 
 end

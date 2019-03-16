@@ -9,7 +9,7 @@ def initialize(name)
 end
 
 def self.create
-  song.new
+  song = Song.new
 song
 end
 

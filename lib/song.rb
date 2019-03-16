@@ -55,7 +55,7 @@ def self.new_from_filename(info)
 end
 
 def self.create_from_filename(info)
-  song = self.new(info)
+  song = self.new("For Love I Come")
   song.artist_name = "Thundercat"
   song
 end

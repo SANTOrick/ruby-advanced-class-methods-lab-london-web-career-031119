@@ -44,7 +44,7 @@ def self.find_or_create_by_name(tip)
 end
 
 def self.alphabetical
-  @@all.sort_by { |song| song.attribute }
+  @@all.sort! { |a, b|  a.attribute <=> b.attribute }
 
 end
 

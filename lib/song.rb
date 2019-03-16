@@ -7,10 +7,10 @@ def initialize
   @@all << self
 end
 
-def self.create
-  song = self.new
-  @@all << song
-  song
+
+  def self.create
+    song = self.new
+    @@all << song
 end
 
 

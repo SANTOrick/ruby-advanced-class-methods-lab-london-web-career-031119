@@ -9,6 +9,7 @@ end
 
 def self.create
   song = self.new
+  @@spng << song
   song
 end
 

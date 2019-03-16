@@ -39,7 +39,9 @@ def self.find_by_name(tip)
 end
 
 def self.find_or_create_by_name(tip)
-  self.find_by_name(tip) ? self.class : self.create_by_name(tip)
+  self.find_by_name(tip) ? self.class : self.create_by_name(tip).class
+    
+  end
 end
 
 

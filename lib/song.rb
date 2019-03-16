@@ -6,7 +6,8 @@ class Song
 
     @@all = []
 
-    def initialize(name = nil)
+    def initialize(name = nil, artist_name = nil)
+      @artist_name = artist_name
       @name = name
       @@all << self
     end
@@ -45,8 +46,9 @@ end
 
 def self.alphabetical
   @@all.sort! { |a,b| a.name.downcase <=> b.name.downcase }.uniq!
-
 end
+
+def self.new_from_filename
 
 
 end

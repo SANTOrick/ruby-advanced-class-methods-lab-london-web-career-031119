@@ -9,6 +9,7 @@ def initialize(name)
 end
 
 def self.create
+  song.new
 
 end
 

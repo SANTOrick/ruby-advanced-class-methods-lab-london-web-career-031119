@@ -9,7 +9,7 @@ end
 
 def self.create
   song = self.new
-  @@all? { |e|  } << song
+  @@all << song
   song
 end
 
